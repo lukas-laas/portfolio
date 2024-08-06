@@ -1,20 +1,23 @@
-import { Article } from "./ui";
+import { Article, Header2, Header3, Paragraph } from "./ui";
 
 export function Work() {
   return (
     <Article>
-      <h2>Brick</h2>
-      <p>
+      <header>
+        <Header2>Work experience</Header2>
+      </header>
+      <Header3>Brick</Header3>
+      <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
         obcaecati necessitatibus! Iure ipsa hic consequatur voluptatibus fugit,
         quae fuga id!
-      </p>
-      <h2>Brick</h2>
-      <p>
+      </Paragraph>
+      <Header3>Brick</Header3>
+      <Paragraph>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
         obcaecati necessitatibus! Iure ipsa hic consequatur voluptatibus fugit,
         quae fuga id!
-      </p>
+      </Paragraph>
     </Article>
   );
 }

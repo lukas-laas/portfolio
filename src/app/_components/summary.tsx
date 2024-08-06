@@ -1,11 +1,11 @@
-import { Article, Section } from "./ui";
+import { Article, Header1, Header2, Header3, Paragraph, Section } from "./ui";
 
 export function Summary() {
   return (
     <Section>
       <header>
-        <h1>Lukas Låås</h1>
-        <h2>Fullstack javascript developer</h2>
+        <Header1>Lukas Låås</Header1>
+        <Header2>Fullstack javascript developer</Header2>
         <ul>
           <li>GitHub</li>
           <li>LinkedIn</li>
@@ -13,7 +13,7 @@ export function Summary() {
       </header>
       <Article>
         <div>Image</div>
-        <p>
+        <Paragraph>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
           explicabo ullam? Cumque amet dolorem aspernatur. Libero soluta aut
           laboriosam explicabo odio sint aliquid nesciunt debitis nam non sunt
@@ -21,10 +21,10 @@ export function Summary() {
           animi molestias doloribus, placeat ex! Ducimus iste vel eveniet vitae
           distinctio adipisci, illo quisquam, pariatur odio placeat libero
           porro, sapiente nulla fugit alias.
-        </p>
+        </Paragraph>
       </Article>
       <Article>
-        <h2>Languages</h2>
+        <Header3>Languages</Header3>
         <ul>
           <li>Javascript/Typescript</li>
           <li>Javascript/Typescript</li>
