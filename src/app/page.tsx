@@ -3,7 +3,7 @@ import { Summary } from "./_components/summary";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4 gap-4">
+    <main className="flex max-h-full flex-col justify-center gap-4 md:flex-row h-full items-center">
       <Summary />
       <Details />
     </main>

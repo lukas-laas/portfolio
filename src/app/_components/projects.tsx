@@ -1,20 +1,20 @@
-import { Article, Header2, Header3, Paragraph } from "./ui";
+import { Article, Divider, Gallery, Header2, Header3, Paragraph } from "./ui";
 
 export function Projects() {
   return (
     <>
+      <header>
+        <Header2>Projects</Header2>
+        <Divider />
+      </header>
       <Article>
-        <header>
-          <Header2>Projects</Header2>
-        </header>
         <Header3>Project!</Header3>
-        <div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-        </div>
+        <Gallery
+          images={[
+            { url: "https://picsum.photos/536/354", title: "cat", alt: "cat" },
+            { url: "https://picsum.photos/536/354", title: "cat", alt: "cat" },
+          ]}
+        />
         <Paragraph>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
           quia sunt maiores repudiandae non, earum labore accusantium facere
@@ -23,13 +23,12 @@ export function Projects() {
       </Article>
       <Article>
         <Header3>Project!</Header3>
-        <div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-        </div>
+        <Gallery
+          images={[
+            { url: "https://picsum.photos/536/354", title: "cat", alt: "cat" },
+            { url: "https://picsum.photos/536/354", title: "cat", alt: "cat" },
+          ]}
+        />
         <Paragraph>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
           quia sunt maiores repudiandae non, earum labore accusantium facere
@@ -38,13 +37,12 @@ export function Projects() {
       </Article>{" "}
       <Article>
         <Header3>Project!</Header3>
-        <div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-          <div>Image</div>
-        </div>
+        <Gallery
+          images={[
+            { url: "https://picsum.photos/536/354", title: "cat", alt: "cat" },
+            { url: "https://picsum.photos/536/354", title: "cat", alt: "cat" },
+          ]}
+        />
         <Paragraph>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
           quia sunt maiores repudiandae non, earum labore accusantium facere
