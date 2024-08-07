@@ -29,11 +29,23 @@ export function Summary() {
           </header>
           <Header2>Fullstack javascript developer</Header2>
           <div className="flex flex-col gap-4 py-12">
-            <Link href={"#"} className="flex gap-1 text-xl items-center">
+            <Link
+              href={"https://github.com/lukas-laas"}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="flex gap-1 text-xl items-center"
+            >
               <GitHub />
               GitHub
             </Link>
-            <Link href={"#"} className="flex gap-1 text-xl items-center">
+            <Link
+              href={
+                "https://www.linkedin.com/in/lukas-l%C3%A5%C3%A5s-48931b251/"
+              }
+              className="flex gap-1 text-xl items-center"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <LinkedInIcon />
               LinkedIn
             </Link>
