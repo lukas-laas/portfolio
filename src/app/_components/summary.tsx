@@ -19,7 +19,7 @@ export function Summary() {
         <Article>
           <header>
             <Image
-              src={"/TA01UCHBN-U070E6F3M0S-0d674497180f-512.jpeg"}
+              src={"/Lukas.png"}
               width={300}
               height={300}
               alt="Profile picture"
@@ -53,25 +53,25 @@ export function Summary() {
           <Header3>~ whoami</Header3>
           <Paragraph>
             I am a Fullstack JS programmer with a heart for music. I've been
-            programming since middleschool and have studied it actively for
-            about 3 years. Currently searching for a job and spending of my
-            freetime on music and projects.
+            programming since middleschool and have been coding full-time for
+            three years. Currently available for try-and-hire through Salt and
+            spending most of my free time on music and personal projects.
           </Paragraph>
         </Article>
         <Article>
           <Header3>Languages & Frameworks</Header3>
           <List>
-            <ListItem>Javascript/Typescript</ListItem>
-            <ListItem>NextJS/React</ListItem>
+            <ListItem>JavaScript/TypeScript</ListItem>
+            <ListItem>Next.js/React.js</ListItem>
             <ListItem>HTML/CSS</ListItem>
-            <ListItem>ExpressJS</ListItem>
+            <ListItem>Express.js</ListItem>
             <ListItem>Drizzle/PostgreSQL</ListItem>
             <ListItem>Python</ListItem>
             <ListItem>C#</ListItem>
           </List>
           <List>
             <ListItem>Swedish native</ListItem>
-            <ListItem>English fuent</ListItem>
+            <ListItem>English fluent</ListItem>
           </List>
         </Article>
       </Section>

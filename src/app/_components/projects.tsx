@@ -1,5 +1,6 @@
 import { BrickDashboard } from "./projects/brick-dashboard";
-import { Article, Divider, Gallery, Header2, Header3, Paragraph } from "./ui";
+import { MusicWebsite } from "./projects/music-website";
+import { Divider, Header2 } from "./ui";
 
 export function Projects() {
   return (
@@ -8,6 +9,7 @@ export function Projects() {
         <Header2>Projects</Header2>
         <Divider />
       </header>
+      <MusicWebsite />
       <BrickDashboard />
     </>
   );
