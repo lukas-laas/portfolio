@@ -24,7 +24,8 @@ export function MusicWebsite() {
       />
       <Paragraph>
         An app for me to show off some music demos. Built with Next.js. Future
-        plans include a admin page for easier uploading and a cleaner interface.
+        plans include an admin page for easier uploading and a cleaner
+        interface.
       </Paragraph>
     </Article>
   );
