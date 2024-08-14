@@ -27,7 +27,7 @@ export function Summary() {
             />
             <Header1>Lukas Låås</Header1>
           </header>
-          <Header2>Fullstack javascript developer</Header2>
+          <Header2>Fullstack JavaScript developer</Header2>
           <div className="flex flex-col gap-4 py-12">
             <Link
               href={"https://github.com/lukas-laas"}
@@ -50,29 +50,38 @@ export function Summary() {
               LinkedIn
             </Link>
           </div>
-          <Header3>~ whoami</Header3>
-          <Paragraph>
-            I am a Fullstack JS programmer with a heart for music. I've been
-            programming since middleschool and have been coding full-time for
-            three years. Currently available for try-and-hire through Salt and
-            spending most of my free time on music and personal projects.
-          </Paragraph>
-        </Article>
-        <Article>
-          <Header3>Languages & Frameworks</Header3>
-          <List>
-            <ListItem>JavaScript/TypeScript</ListItem>
-            <ListItem>Next.js/React.js</ListItem>
-            <ListItem>HTML/CSS</ListItem>
-            <ListItem>Express.js</ListItem>
-            <ListItem>Drizzle/PostgreSQL</ListItem>
-            <ListItem>Python</ListItem>
-            <ListItem>C#</ListItem>
-          </List>
-          <List>
-            <ListItem>Swedish native</ListItem>
-            <ListItem>English fluent</ListItem>
-          </List>
+          <div className="flex flex-row flex-wrap">
+            <div className="w-1/2">
+              <Article>
+                <Header3>Technical abilities</Header3>
+                <List>
+                  <ListItem>JavaScript/TypeScript</ListItem>
+                  <ListItem>Next.js/React.js</ListItem>
+                  <ListItem>HTML/CSS</ListItem>
+                  <ListItem>Express.js</ListItem>
+                  <ListItem>Drizzle/PostgreSQL</ListItem>
+                  <ListItem>Python</ListItem>
+                  <ListItem>C#</ListItem>
+                </List>
+                <List>
+                  <ListItem>Swedish native</ListItem>
+                  <ListItem>English fluent</ListItem>
+                </List>
+              </Article>
+            </div>
+            <div className="w-1/2">
+              <Article>
+                <Header3>~ whoami</Header3>
+                <Paragraph>
+                  I am a Fullstack JS programmer with a heart for music. I've
+                  been programming since middleschool and have been coding
+                  full-time for three years. Currently available for
+                  try-and-hire through Salt and spending most of my free time on
+                  music and personal projects.
+                </Paragraph>
+              </Article>
+            </div>
+          </div>
         </Article>
       </Section>
     </div>

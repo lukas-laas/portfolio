@@ -11,7 +11,7 @@ export function Education() {
         <Header3>Salt JavaScript Fullstack</Header3>
         <Paragraph>
           3 month bootcamp learning fullstack JavaScript and working in mobs.
-          Focus on ExpressJS, NextJS, Drizzle, and other modern JS frameworks.
+          Focus on Express.js, Next.js, Drizzle, and other modern JS frameworks.
         </Paragraph>
       </Article>
       <Article>
