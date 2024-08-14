@@ -27,7 +27,7 @@ export function Gallery({ images }: Props) {
           alt={image.alt}
           height={200}
           width={200}
-          className="max-h-24 max-w-32"
+          className="max-h-24 max-w-32 hover:cursor-pointer"
           onClick={() => {
             setPhotoIndex(i);
             setIsOpen(true);
