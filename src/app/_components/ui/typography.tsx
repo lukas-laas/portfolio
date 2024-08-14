@@ -53,5 +53,5 @@ export function List({ children }: { children: ReactNode }) {
 }
 
 export function ListItem({ children }: { children: ReactNode }) {
-  return <li style={{ color: "#2d2d2d" }}>{children}</li>;
+  return <li style={{ color: "#ECE2D1" }}>{children}</li>;
 }

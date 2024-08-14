@@ -58,8 +58,8 @@ export function Summary() {
               LinkedIn
             </Link>
           </div>
-          <div className="flex flex-row flex-wrap">
-            <div className="w-1/2">
+          <div className="flex  flex-wrap flex-col md:flex-row">
+            <div className="md:w-1/2">
               <Article>
                 <Header3>
                   <span style={{ color: "#ECE2D1" }}>~ whoami</span>
@@ -75,7 +75,7 @@ export function Summary() {
                 </Paragraph>
               </Article>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <Article>
                 <Header3>
                   <span style={{ color: "#ECE2D1" }}> Technical abilities</span>
