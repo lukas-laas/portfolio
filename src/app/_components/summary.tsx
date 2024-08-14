@@ -26,7 +26,7 @@ export function Summary() {
               className="float-right size-48 rounded-full hidden md:flex shadow-md"
             />
             <Header1>
-              <span style={{ color: "#ECE2D1" }}>Lukas Låås</span>
+              <span style={{ color: "#F5EFE4" }}>Lukas Låås</span>
             </Header1>
           </header>
           <Header2>
@@ -62,7 +62,9 @@ export function Summary() {
             <div className="md:w-1/2">
               <Article>
                 <Header3>
-                  <span style={{ color: "#ECE2D1" }}>~ whoami</span>
+                  <span style={{ color: "#F5EFE4" }}>
+                    <strong className="text-2xl"> ~ whoami</strong>
+                  </span>
                 </Header3>
                 <Paragraph>
                   <span style={{ color: "#ECE2D1" }}>
