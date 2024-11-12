@@ -25,24 +25,17 @@ export function Summary() {
               alt="Profile picture"
               className="float-right size-48 rounded-full hidden md:flex shadow-md"
             />
-            <Header1>
-              <span style={{ color: "#F5EFE4" }}>Lukas Låås</span>
-            </Header1>
+            <Header1>Lukas Låås</Header1>
           </header>
-          <Header2>
-            <span style={{ color: "#ECE2D1" }}>
-              Fullstack JavaScript developer
-            </span>
-          </Header2>
+          <Header2>Fullstack JavaScript developer</Header2>
           <div className="flex flex-col gap-4 py-12">
             <Link
               href={"https://github.com/lukas-laas"}
               rel="noopener noreferrer"
               target="_blank"
               className="flex gap-1 text-xl items-center"
-              style={{ color: "#ECE2D1" }}
             >
-              <GitHub style={{ color: "#ECE2D1" }} />
+              <GitHub />
               GitHub
             </Link>
             <Link
@@ -50,11 +43,10 @@ export function Summary() {
                 "https://www.linkedin.com/in/lukas-l%C3%A5%C3%A5s-48931b251/"
               }
               className="flex gap-1 text-xl items-center"
-              style={{ color: "#ECE2D1" }}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <LinkedInIcon style={{ color: "#ECE2D1" }} />
+              <LinkedInIcon />
               LinkedIn
             </Link>
           </div>
@@ -62,61 +54,33 @@ export function Summary() {
             <div className="md:w-1/2">
               <Article>
                 <Header3>
-                  <span style={{ color: "#F5EFE4" }}>
-                    <strong className="text-2xl"> ~ whoami</strong>
-                  </span>
+                  <strong className="text-2xl"> ~ whoami</strong>
                 </Header3>
                 <Paragraph>
-                  <span style={{ color: "#ECE2D1" }}>
-                    I am a Fullstack JS programmer with a heart for music. I've
-                    been programming since middleschool and have been coding
-                    full-time for three years. Currently available for
-                    try-and-hire through Salt and spending most of my free time
-                    on music and personal projects.
-                  </span>
+                  I am a Fullstack JS programmer with a heart for music. I've
+                  been programming since middleschool and have been coding
+                  full-time for three years. If you need a programmer or just
+                  want to have a chat please reach out. Currently I'm spending
+                  most of my free time on music and personal projects.
                 </Paragraph>
               </Article>
             </div>
             <div className="md:w-1/2">
               <Article>
-                <Header3>
-                  <span style={{ color: "#ECE2D1" }}> Technical abilities</span>
-                </Header3>
+                <Header3>Technical abilities</Header3>
                 <List>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}>
-                      JavaScript/TypeScript
-                    </span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> Next.js/React.js</span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> HTML/CSS</span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> Express.js</span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}>
-                      {" "}
-                      Drizzle/PostgreSQL
-                    </span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> Python</span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> C#</span>
-                  </ListItem>
+                  <ListItem>JavaScript/TypeScript</ListItem>
+                  <ListItem>Next.js/React.js</ListItem>
+                  <ListItem>HTML/CSS</ListItem>
+                  <ListItem>Express.js</ListItem>
+                  <ListItem>Drizzle/PostgreSQL</ListItem>
+                  <ListItem>Python</ListItem>
+                  <ListItem>C#</ListItem>
                 </List>
+                <Header3>Languages</Header3>
                 <List>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> Swedish native</span>
-                  </ListItem>
-                  <ListItem>
-                    <span style={{ color: "#ECE2D1" }}> English fluent</span>
-                  </ListItem>
+                  <ListItem>Swedish native</ListItem>
+                  <ListItem>English fluent</ListItem>
                 </List>
               </Article>
             </div>
