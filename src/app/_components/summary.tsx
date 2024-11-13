@@ -27,7 +27,7 @@ export function Summary() {
             />
             <Header1>Lukas Låås</Header1>
           </header>
-          <Header2>Fullstack JavaScript developer</Header2>
+          <Header2>Fullstack developer</Header2>
           <div className="flex flex-col gap-4 py-12">
             <Link
               href={"https://github.com/lukas-laas"}
@@ -57,11 +57,11 @@ export function Summary() {
                   <strong className="text-2xl"> ~ whoami</strong>
                 </Header3>
                 <Paragraph>
-                  I am a Fullstack JS programmer with a heart for music. I've
-                  been programming since middleschool and have been coding
-                  full-time for three years. If you need a programmer or just
-                  want to have a chat please reach out. Currently I'm spending
-                  most of my free time on music and personal projects.
+                  I am a programmer with a heart for music. I've been
+                  programming since middleschool and have been coding full-time
+                  for three years. If you need a programmer or just want to have
+                  a chat please reach out. Currently I'm spending most of my
+                  free time on music and personal projects.
                 </Paragraph>
               </Article>
             </div>
