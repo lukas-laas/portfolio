@@ -34,7 +34,8 @@ export function VenueMap() {
         A web app to crowd source data about music venues. The goal was to make
         it easier for smaller artists and concert goers to keep track of music
         venues. At the moment the user submits data and I add and update venues
-        through the admin panel.
+        through the admin panel. The main page shows details about music venues
+        around the country. Please feel free to contribute if you feel like it!
       </Paragraph>
     </Article>
   );
