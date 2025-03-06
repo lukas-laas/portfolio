@@ -4,9 +4,7 @@ import { Modak } from "next/font/google";
 const modak = Modak({ weight: "400", subsets: ["devanagari"] });
 
 export function Header1({ children }: { children: ReactNode }) {
-  return (
-    <h1 className={`${modak.className} text-4xl pt-4 pb-2`}>{children}</h1>
-  );
+  return <h1 className={`text-4xl pt-4 pb-2`}>{children}</h1>;
 }
 
 export function Header2({ children }: { children: ReactNode }) {
