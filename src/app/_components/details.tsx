@@ -5,7 +5,7 @@ import { Work } from "./work";
 
 export function Details() {
   return (
-    <div className="md:float-right h-full max-w-full md:max-h-screen overflow-y-scroll text-dark">
+    <div className="md:float-right h-full max-w-full md:max-h-screen overflow-y-scroll text-text">
       <Section>
         <Projects />
         <Work />

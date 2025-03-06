@@ -1,3 +1,3 @@
 export function Divider() {
-  return <hr className="border-dark border-t-2 pb-2" />;
+  return <hr className="border-text border-t-2 pb-2" />;
 }

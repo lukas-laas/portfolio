@@ -19,7 +19,7 @@ export function Summary() {
         <Article>
           <header>
             <Image
-              src={"/Lukas.png"}
+              src={"/pfp.jpg"}
               width={300}
               height={300}
               alt="Profile picture"
