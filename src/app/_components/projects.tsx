@@ -13,7 +13,7 @@ export function Projects() {
       </header>
       <VenueMap />
       <SlowMessagingApp />
-      <MusicWebsite />
+      {/* <MusicWebsite /> */}
       <BrickDashboard />
     </>
   );
