@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox, { SlideImage } from "yet-another-react-lightbox";
 import Image from "next/image";
+import NextJsImage from "./next-js-image";
+import "yet-another-react-lightbox/styles.css";
 
 type Image = {
   url: string;
@@ -12,7 +13,7 @@ type Image = {
 };
 
 type Props = {
-  images: Image[];
+  images: SlideImage[];
 };
 
 export function Gallery({ images }: Props) {
@@ -22,9 +23,9 @@ export function Gallery({ images }: Props) {
     <div className="flex gap-2 max-w-full flex-wrap">
       {images.map((image, i) => (
         <Image
-          key={image.url}
-          src={image.url}
-          alt={image.alt}
+          key={image.src}
+          src={image.src}
+          alt={image.alt!}
           height={200}
           width={200}
           className="max-h-24 max-w-32 hover:cursor-pointer"
@@ -37,18 +38,22 @@ export function Gallery({ images }: Props) {
       <div>
         {isOpen && (
           <Lightbox
-            mainSrc={images[photoIndex].url}
-            nextSrc={images[(photoIndex + 1) % images.length].url}
-            prevSrc={
-              images[(photoIndex + images.length - 1) % images.length].url
-            }
-            onCloseRequest={() => setIsOpen(false)}
-            onMovePrevRequest={() =>
-              setPhotoIndex((photoIndex + images.length - 1) % images.length)
-            }
-            onMoveNextRequest={() =>
-              setPhotoIndex((photoIndex + 1) % images.length)
-            }
+            // mainSrc={images[photoIndex].url}
+            // nextSrc={images[(photoIndex + 1) % images.length].url}
+            // prevSrc={
+            //   images[(photoIndex + images.length - 1) % images.length].url
+            // }
+            // onCloseRequest={() => setIsOpen(false)}
+            // onMovePrevRequest={() =>
+            //   setPhotoIndex((photoIndex + images.length - 1) % images.length)
+            // }
+            // onMoveNextRequest={() =>
+            //   setPhotoIndex((photoIndex + 1) % images.length)
+            // }
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            render={{ slide: NextJsImage }}
           />
         )}
       </div>

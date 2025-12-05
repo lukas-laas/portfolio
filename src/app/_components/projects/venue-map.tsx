@@ -5,7 +5,7 @@ export function VenueMap() {
   return (
     <Article>
       <Link
-        href="https://venue-map.vercel.app"
+        href="https://venuemap.lukaslaas.se"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -14,18 +14,18 @@ export function VenueMap() {
       <Gallery
         images={[
           {
-            url: "/venue-map/Screenshot from 2024-11-13 13-55-22.png",
-            title: "Venue map",
+            src: "/venue-map/Screenshot from 2024-11-13 13-55-22.png",
+            // title: "Venue map",
             alt: "Venue map",
           },
           {
-            url: "/venue-map/Screenshot from 2024-11-13 13-55-37.png",
-            title: "Venue map",
+            src: "/venue-map/Screenshot from 2024-11-13 13-55-37.png",
+            // title: "Venue map",
             alt: "Venue map",
           },
           {
-            url: "/venue-map/Screenshot from 2024-11-13 13-55-47.png",
-            title: "Venue map",
+            src: "/venue-map/Screenshot from 2024-11-13 13-55-47.png",
+            // title: "Venue map",
             alt: "Venue map",
           },
         ]}

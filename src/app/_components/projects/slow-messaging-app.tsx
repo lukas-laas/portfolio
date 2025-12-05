@@ -14,23 +14,23 @@ export function SlowMessagingApp() {
       <Gallery
         images={[
           {
-            url: "/Screenshot from 2024-08-13 20-07-04.png",
-            title: "Slow messaging app",
+            src: "/Screenshot from 2024-08-13 20-07-04.png",
+            // title: "Slow messaging app",
             alt: "Slow messaging app",
           },
           {
-            url: "/Screenshot from 2024-08-13 20-08-02.png",
-            title: "Slow messaging app",
+            src: "/Screenshot from 2024-08-13 20-08-02.png",
+            // title: "Slow messaging app",
             alt: "Slow messaging app",
           },
           {
-            url: "/Screenshot from 2024-08-13 20-09-41.png",
-            title: "Slow messaging app",
+            src: "/Screenshot from 2024-08-13 20-09-41.png",
+            // title: "Slow messaging app",
             alt: "Slow messaging app",
           },
           {
-            url: "/Screenshot from 2024-08-13 20-28-14.png",
-            title: "Slow messaging app",
+            src: "/Screenshot from 2024-08-13 20-28-14.png",
+            // title: "Slow messaging app",
             alt: "Slow messaging app",
           },
         ]}

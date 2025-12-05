@@ -11,10 +11,10 @@ export function Projects() {
         <Header2>Projects</Header2>
         <Divider />
       </header>
-      <VenueMap />
+      <VenueMap />  
+      <BrickDashboard />
       <SlowMessagingApp />
       {/* <MusicWebsite /> */}
-      <BrickDashboard />
     </>
   );
 }
