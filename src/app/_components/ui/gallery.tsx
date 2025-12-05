@@ -6,12 +6,6 @@ import Image from "next/image";
 import NextJsImage from "./next-js-image";
 import "yet-another-react-lightbox/styles.css";
 
-type Image = {
-  url: string;
-  title: string;
-  alt: string;
-};
-
 type Props = {
   images: SlideImage[];
 };
