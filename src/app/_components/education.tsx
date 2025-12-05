@@ -9,7 +9,7 @@ export function Education() {
       </header>
       <Article>
         <Header3>Uppsala university</Header3>
-        <Header4>Bachelor's Programme in Information systems - Systems Development</Header4>
+        <Header4>Bachelor's Programme in Information Systems - Systems Development</Header4>
         <List>
           <ListItem>Current: Databases (SQL)</ListItem>
           <ListItem>Object-Oriented Programming I (C#)</ListItem>

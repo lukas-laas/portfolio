@@ -69,14 +69,13 @@ export function Summary() {
               <Article>
                 <Header3>Technical abilities</Header3>
                 <List>
-                  <ListItem>JavaScript/TypeScript</ListItem>
-                  <ListItem>Next.js/React.js</ListItem>
-                  <ListItem>HTML/CSS</ListItem>
-                  <ListItem>Express.js</ListItem>
-                  <ListItem>Drizzle/PostgreSQL</ListItem>
-                  <ListItem>Python</ListItem>
                   <ListItem>C#</ListItem>
+                  <ListItem>JavaScript/TypeScript</ListItem>
+                  <ListItem>Python</ListItem>
                   <ListItem>C++</ListItem>
+                  <ListItem>Next.js/React.js</ListItem>
+                  <ListItem>Express.js</ListItem>
+                  <ListItem>SQL</ListItem>
                 </List>
                 <Header3>Languages</Header3>
                 <List>

@@ -11,11 +11,11 @@ export function Work() {
       <Article>
         <Header3>Awareify - fullstack app developer</Header3>
         <Paragraph>
-          Supplied a proof of concept for an update of their 
+          Supplied a proof of concept for an update of their{" "}
           <Link href="http://awareify.se/_files/ugd/3ad616_73d1756a2f564f89b3fe62723a762b76.pdf" className="underline"
           rel="noopener noreferrer"
-          target="_blank"> "Awareify Effektvy" </Link>
-          in React native.
+          target="_blank">"Awareify Effektvy"</Link>
+          {" "}in React native.
         </Paragraph>
       </Article>
       <Article>
