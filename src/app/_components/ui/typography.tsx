@@ -14,6 +14,9 @@ export function Header2({ children }: { children: ReactNode }) {
 export function Header3({ children }: { children: ReactNode }) {
   return <h3 className="text-xl pt-1 pb-0.5">{children}</h3>;
 }
+export function Header4({ children }: { children: ReactNode }) {
+  return <h3 className="text-l pt-1 pb-0.5">{children}</h3>;
+}
 
 export function Paragraph({ children }: { children: ReactNode }) {
   return <p className="text-md py-2  pt-1">{children}</p>;
