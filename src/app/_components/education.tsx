@@ -9,19 +9,19 @@ export function Education() {
       </header>
       <Article>
         <Header3>Uppsala university</Header3>
-        <Header4>Kandidatprogram i systemvetenskap</Header4>
+        <Header4>Bachelor's Programme in Information systems - Systems Development</Header4>
         <List>
-          <ListItem>Current: Databaser (SQL)</ListItem>
-          <ListItem>Objektorienterad programmering I (C#)</ListItem>
-          <ListItem>Grundläggande programmering (C#)</ListItem>
-          <ListItem>Systemutveckling</ListItem>
+          <ListItem>Current: Databases (SQL)</ListItem>
+          <ListItem>Object-Oriented Programming I (C#)</ListItem>
+          <ListItem>Introduction to Programming (C#)</ListItem>
+          <ListItem>Informations Systems</ListItem>
         </List>
-        <Header4>Fristående kurser</Header4>
+        <Header4>Other courses</Header4>
         <List>
-          <ListItem>Datorer och programmering (C++)</ListItem>
-          <ListItem>Inledande programmering med Java</ListItem>
-          <ListItem>Programmeringsteknik II (Python)</ListItem>
-          <ListItem>Programmeringsteknik I (Python)</ListItem>
+          <ListItem>Computers and Programming (C++)</ListItem>
+          <ListItem>Introduction to Programming with Java</ListItem>
+          <ListItem>Computer Programming II (Python)</ListItem>
+          <ListItem>Computer Programming I (Python)</ListItem>
         </List>
       </Article>
       <Article>
