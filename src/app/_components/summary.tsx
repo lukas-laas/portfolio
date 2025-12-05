@@ -76,6 +76,7 @@ export function Summary() {
                   <ListItem>Drizzle/PostgreSQL</ListItem>
                   <ListItem>Python</ListItem>
                   <ListItem>C#</ListItem>
+                  <ListItem>C++</ListItem>
                 </List>
                 <Header3>Languages</Header3>
                 <List>
