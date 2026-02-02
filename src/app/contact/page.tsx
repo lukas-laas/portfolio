@@ -1,8 +1,10 @@
 "use client"
 import { FormEvent } from "react";
-import { Header1, SummarySection, YesNo, TextInput, TextArea } from "../_components/ui";
+import { Header1, YesNo, TextInput, TextArea, Section, Header4 } from "../_components/ui";
+import { useRouter } from "next/navigation";
 
 export default function Contact() {
+  const router = useRouter();
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
         const formData = new FormData(event.currentTarget as HTMLFormElement);
@@ -26,16 +28,20 @@ export default function Contact() {
 
             const result = await response.json();
             console.log('SMS result:', result);
+
+            router.push("/")
+
         } catch (error) {
             console.error('error:', error);
             alert('Submission failed! (please reach out by email or sms, im so sorry)');
         }
     }
   return (
-    <main className="flex max-h-full flex-col justify-center md:flex-row h-full items-center gap-4 bg-bg2">
-        <SummarySection>
-            <Header1>Want to hire me?</Header1>
-            <form onSubmit={onSubmit}>
+    <main className="flex max-h-full flex-col justify-center md:flex-row h-full items-center gap-4 bg-bg">
+        <Section className="max-w-3xl">
+            <div className="text-text">
+            <form onSubmit={onSubmit} className="bg-bg2 p-4 rounded-md">
+                <Header1>Want to hire me?</Header1>
                 <fieldset>
                     <legend>Questions</legend>
                     <YesNo question="Are you/your company using AI to filter candidates?*" name="ai" required/>
@@ -79,16 +85,17 @@ export default function Contact() {
                 </fieldset>
 
                 <fieldset>
-                    <legend>Contact Information</legend>
+                    <legend><Header4>Contact Information*</Header4></legend>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" name="email" id="email" required className="p-2 border rounded" />
+                        <input type="email" name="email" id="email" required className="p-1 border m-2 rounded text-bg w-full" />
                     </div>
                 </fieldset>
                 
-                <button type="submit">Submit</button>
+                <button type="submit" className="rounded bg-textAccent py-2 px-4 text-bg text-2xl">Submit</button>
             </form>
-        </SummarySection>
+            </div>
+        </Section>
     </main>
   );
 }

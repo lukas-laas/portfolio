@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-export function Section({ children }: { children: ReactNode }) {
+export function Section({ children, className, ...props }: { children: ReactNode; className?: string } & React.HTMLAttributes<HTMLElement>) {
   return (
-    <section className="p-4 w-full max-w-xl md:p-8 md:min-h-full border-text ">
+    <section className={`p-4 w-full max-w-xl md:p-8 md:min-h-full border-text ${className || ''}`} {...props}>
       {children}
     </section>
   );

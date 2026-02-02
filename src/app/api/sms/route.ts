@@ -15,7 +15,16 @@ export async function POST(request: NextRequest) {
     }
 
     // Create SMS message from form data
-    const smsMessage = `New contact form submission! Email: ${formData.email}, AI: ${formData.ai}, Snack: ${formData.snack || 'N/A'}, Ideal: ${formData.ideal || 'N/A'}, Tech Stack: ${formData.techStack || 'N/A'}, Time Travel: ${formData.timeTravel || 'N/A'}, Tasks: ${formData.tasks || 'N/A'}, Projects: ${formData.projects || 'N/A'}, Worm: ${formData.worm}`;
+    const smsMessage = `New contact form submission!
+Email: ${formData.email}
+AI: ${formData.ai}
+Snack: ${formData.snack || 'N/A'}
+Ideal: ${formData.ideal || 'N/A'}
+Tech Stack: ${formData.techStack || 'N/A'}
+Time Travel: ${formData.timeTravel || 'N/A'}
+Tasks: ${formData.tasks || 'N/A'}
+Projects: ${formData.projects || 'N/A'}
+Worm: ${formData.worm}`;
 
     // Send SMS using the existing 46elks function
     const result = await sendSms(phoneNumber, smsMessage);

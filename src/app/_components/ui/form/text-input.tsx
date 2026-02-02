@@ -13,7 +13,7 @@ export function TextInput({label, name, placeholder, required}: {label: string, 
                 id={name} 
                 placeholder={placeholder} 
                 required={required}
-                className="p-2 border rounded"
+                className="p-2 border rounded text-bg w-full"
             />
         </div>
     )
