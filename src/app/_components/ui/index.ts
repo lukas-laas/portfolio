@@ -4,3 +4,4 @@ export * from "./typography";
 export * from "./gallery";
 export * from "./divider";
 export * from "./footer";
+export * from "./form";

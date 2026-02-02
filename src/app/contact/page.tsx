@@ -1,6 +1,6 @@
 "use client"
 import { FormEvent } from "react";
-import { Header1, SummarySection } from "../_components/ui";
+import { Header1, SummarySection, YesNo, TextInput, TextArea } from "../_components/ui";
 
 export default function Contact() {
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -19,73 +19,51 @@ export default function Contact() {
             <form onSubmit={onSubmit}>
                 <fieldset>
                     <legend>Questions</legend>
-                    <div>
-                        <p>Are you/your company using AI to filter candidates?*</p>
-                        <label>
-                            <input type="radio" name="ai" value="yes" required /> Yes
-                        </label>
-                        <label>
-                            <input type="radio" name="ai" value="no" /> No
-                        </label>
-                    </div>
-                    <br />
+                    <YesNo question="Are you/your company using AI to filter candidates?*" name="ai" required/>
                     
-                    <div>
-                        <label htmlFor="snack">What's the official team snack for debugging?</label>
-                        <input type="text" name="snack" id="snack" placeholder="pizza, fruit, candy..." />
-                    </div>
-                    <br />
+                    <TextInput 
+                        label="What's the official team snack for debugging?" 
+                        name="snack" 
+                        placeholder="pizza, fruit, candy..." 
+                    />
                     
-                    <div>
-                        <label htmlFor="ideal">What would be an ideal candidate?</label>
-                        <br />
-                        <textarea name="ideal" id="ideal"></textarea>
-                    </div>
-                    <br />
+                    <TextArea 
+                        label="What would be an ideal candidate?" 
+                        name="ideal" 
+                    />
                     
-                    <div>
-                        <label htmlFor="techStack">What tech stack would I be working with?</label>
-                        <br />
-                        <textarea name="techStack" id="techStack" placeholder="React, Node.js, Python, AWS..."></textarea>
-                    </div>
-                    <br />
+                    <TextArea 
+                        label="What tech stack would I be working with?" 
+                        name="techStack" 
+                        placeholder="React, Node.js, Python, AWS..." 
+                    />
                     
-                    <div>
-                        <label htmlFor="timeTravel">If you could time travel to fix one of your companys tech mistakes, what would it be?</label>
-                        <br />
-                        <textarea name="timeTravel" id="timeTravel" placeholder="not give the intern DB access..."></textarea>
-                    </div>
-                    <br />
+                    <TextArea 
+                        label="If you could time travel to fix one of your companys tech mistakes, what would it be?" 
+                        name="timeTravel" 
+                        placeholder="not give the intern DB access..." 
+                    />
                     
-                    <div>
-                        <label htmlFor="tasks">What tasks would I be assigned?</label>
-                        <br />
-                        <textarea name="tasks" id="tasks" placeholder="rontend development, API design, database management..."></textarea>
-                    </div>
-                    <br />
+                    <TextArea 
+                        label="What tasks would I be assigned?" 
+                        name="tasks" 
+                        placeholder="rontend development, API design, database management..." 
+                    />
                     
-                    <div>
-                        <label htmlFor="projects">What kind of projects would I work on?</label>
-                        <br />
-                        <textarea name="projects" id="projects" placeholder="e-commerce, mobile app, dashboard..."></textarea>
-                    </div>
+                    <TextArea 
+                        label="What kind of projects would I work on?" 
+                        name="projects" 
+                        placeholder="e-commerce, mobile app, dashboard..." 
+                    />
 
-                    <div>
-                        <p>Would you hire me if I was a worm?*</p>
-                        <label>
-                            <input type="radio" name="worm" value="yes" required /> Yes
-                        </label>
-                        <label>
-                            <input type="radio" name="worm" value="no" /> No
-                        </label>
-                    </div>
+                    <YesNo question="Would you hire me if I was a worm?*" name="worm" required/>
                 </fieldset>
 
                 <fieldset>
                     <legend>Contact Information</legend>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" name="email" id="email" required />
+                        <input type="email" name="email" id="email" required className="p-2 border rounded" />
                     </div>
                 </fieldset>
                 

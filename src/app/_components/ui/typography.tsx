@@ -11,11 +11,11 @@ export function Header2({ children }: { children: ReactNode }) {
   return <h2 className="text-3xl pt-2 pb-1">{children}</h2>;
 }
 
-export function Header3({ children }: { children: ReactNode }) {
-  return <h3 className="text-2xl pt-1 pb-0.5">{children}</h3>;
+export function Header3({ children, ...props }: { children: ReactNode } & React.HTMLAttributes<HTMLHeadingElement>) {
+  return <h3 className="text-2xl pt-1 pb-0.5" {...props}>{children}</h3>;
 }
-export function Header4({ children }: { children: ReactNode }) {
-  return <h3 className="text-xl pt-1 pb-0.5">{children}</h3>;
+export function Header4({ children, ...props }: { children: ReactNode } & React.HTMLAttributes<HTMLHeadingElement>) {
+  return <h3 className="text-xl pt-1 pb-0.5" {...props}>{children}</h3>;
 }
 
 export function Paragraph({ children }: { children: ReactNode }) {
