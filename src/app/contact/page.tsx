@@ -11,6 +11,25 @@ export default function Contact() {
             formValues[key] = value as string;
         }
         console.log('Form values:', formValues);
+
+        try {
+
+            const response = await fetch('/api/sms', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    formData: formValues
+                })
+            });
+
+            const result = await response.json();
+            console.log('SMS result:', result);
+        } catch (error) {
+            console.error('error:', error);
+            alert('Submission failed! (please reach out by email or sms, im so sorry)');
+        }
     }
   return (
     <main className="flex max-h-full flex-col justify-center md:flex-row h-full items-center gap-4 bg-bg2">
