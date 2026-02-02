@@ -50,6 +50,13 @@ export function Summary() {
               LinkedIn
             </Link>
           </div>
+            <Link
+              href="/contact"
+              className="relative inline-block rounded bg-textAccent py-2 px-4 text-fuchsia-100 text-2xl transition-all duration-300 overflow-hidden hover:shadow-lg group"
+            >
+              <strong className="relative z-10">Hire me</strong>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
+            </Link>
           <div className="flex  flex-wrap flex-col md:flex-row">
             <div className="md:w-1/2">
               <Article>

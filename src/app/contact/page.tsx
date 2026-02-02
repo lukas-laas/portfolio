@@ -92,7 +92,10 @@ export default function Contact() {
                     </div>
                 </fieldset>
                 
-                <button type="submit" className="rounded bg-textAccent py-2 px-4 text-bg text-2xl">Submit</button>
+                <button type="submit" className="relative rounded bg-textAccent py-1 px-2 text-fuchsia-100 text-2xl transition-all duration-300 overflow-hidden hover:shadow-lg group m-1">
+                    <span className="relative z-10">Submit</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
+                </button>
             </form>
             </div>
         </Section>
