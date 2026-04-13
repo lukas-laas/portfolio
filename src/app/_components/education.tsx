@@ -11,8 +11,9 @@ export function Education() {
         <Header3>Uppsala university</Header3>
         <Header4>Bachelor's Programme in Information Systems - Systems Development</Header4>
         <List>
-          <ListItem>Current: Algorithmics</ListItem>
-          <ListItem>Current: Human–Computer Interaction</ListItem>
+          <ListItem>Current: Algorithmicas and Data Structures</ListItem>
+          <ListItem>Algorithmics</ListItem>
+          <ListItem>Human–Computer Interaction</ListItem>
           <ListItem>Databases (SQL)</ListItem>
           <ListItem>Object-Oriented Programming I (C#)</ListItem>
           <ListItem>Introduction to Programming (C#)</ListItem>
